@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Video Conference</title>
+    <link rel="stylesheet" href="./shared/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--<h1 class="heading">Room example</h1>
+      <p class="note">
+        Change Room mode (before join in a room):
+        <a href="#">mesh</a> / <a href="#sfu">sfu</a>
+      </p>
+      -->
+      <div class="room">
+        
+
+        <div class="remote-streams" id="js-remote-streams">
+          <video id="js-local-stream"></video>
+        </div>
+
+
+        <div>
+          <span id="js-room-mode"></span>
+          このグループにおける私の社会的地位は
+          <select name="PeerID" id="js-peer-id">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+          番目に高いです．
+          <button id="js-create-peer">確定</button>
+          <br>
+          <input type="text" placeholder="Room Name" id="js-room-id">
+          <button id="js-join-trigger">Join</button>
+          <button id="js-leave-trigger">Leave</button>
+          <button id="js-method-change">平等化</button>
+          <hr>
+        </div>
+        
+        <!--
+        <div>
+          <pre class="messages" id="js-messages"></pre>
+          <input type="text" id="js-local-text">
+          <button id="js-send-trigger">Send</button>
+        </div>
+      -->
+
+
+      </div>
+
+
+      <p class="meta" id="js-meta"></p>
+    </div>
+    <script src="//cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="./shared/key.js"></script>
+    <script src="./script.js"></script>
+
+
+
+
+    <!--  ----------------------------------------------------   -->
+
+    <canvas id="plotting_canvas" width="500" height="500" style="cursor:crosshair;"></canvas>
+
+    <script type="text/javascript">
+
+    var size2 = [];
+    var size3 = [];
+    size2[0] = 0; // number of point gazed 2
+    size2[1] = 0; // my gaze point is 2
+    size2[2] = 0; // 2 gaze me 
+    size3[0] = 0; // number of point gazed 3
+    size3[1] = 0; // my gaze point is 3
+    size3[2] = 0; // 3 gaze me
+
+    var remote2;
+    var remote3;
+    
+    var state  = 0;
+
+
+    // console.log()
+
+    </script>
+
+  </body>
+</html>

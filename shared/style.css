@@ -1,0 +1,170 @@
+/* normalize */
+body { margin: 0;
+       }
+
+/* global styles */
+video {
+  /*background-color: #111;*/
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.note {
+  text-align: center;
+}
+
+.meta {
+  text-align: center;
+  font-size: .8rem;
+  color: gray;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 980px;
+}
+
+/* p2p-media styles */
+.p2p-media {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p2p-media .remote-stream {
+  width: 50%;
+}
+
+.p2p-media .local-stream {
+  width: 30%;
+}
+
+/* p2p-data styles */
+.p2p-data {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  margin: 0 8px;
+}
+
+.p2p-data .messages {
+  background-color: #eee;
+  min-height: 100px;
+  padding: 8px;
+  margin-top: 0;
+}
+
+/* room */
+.room {
+  /*
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 25% 25% 25% 25%;
+  gap: 8px;
+  margin: 0 8px;*/
+}
+
+.room .remote-streams {
+  /*background-color: #f6fbff;*/
+  width:1300px;
+  height:700px;
+
+}
+
+.stream1{
+  position: absolute;
+  width:50%;
+  height:20%;
+  left:50%;
+  bottom:0;
+  z-index:0;
+}
+
+.stream2{
+  position: absolute;
+  width:50%;
+  height:40%;
+  left:50%;
+  bottom:0;
+  z-index:0;
+}
+
+.stream3{
+  position: absolute;
+  width:50%;
+  height:60%;
+  left:50%;
+  bottom:0;
+  z-index:0;
+}
+
+.local1_stream2{
+  position: absolute;
+  width:50%;
+  height:40%;
+  left:25%;
+  top:0;
+  z-index:0;
+}
+
+
+.local1_stream3{
+  position:absolute;
+  width:50%;
+  height:60%;
+  left:75%;
+  top:0;
+  z-index:0;
+}
+
+.local2_stream3{
+  position: absolute;
+  width:50%;
+  height:60%;
+  left:25%;
+  top:0;
+  z-index:0;
+}
+
+
+.local2_stream1{
+  position:absolute;
+  width:50%;
+  height:20%;
+  left:75%;
+  top:0;
+  z-index:0;
+}
+
+.local3_stream1{
+  position: absolute;
+  width:50%;
+  height:20%;
+  left:25%;
+  top:0;
+  z-index:0;
+}
+
+
+.local3_stream2{
+  position:absolute;
+  width:50%;
+  height:40%;
+  left:75%;
+  top:0;
+  z-index:0;
+}
+
+
+
+.room .messages {
+  /*
+  background-color: #eee;
+  min-height: 100px;
+  padding: 8px;
+  margin-top: 0;
+  */
+}
